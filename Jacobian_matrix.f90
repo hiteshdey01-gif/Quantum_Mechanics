@@ -14,9 +14,8 @@ real(8) :: g,h
 
 max_iter = 100
 
-! -----------------------------
 ! Read matrix from file
-! -----------------------------
+
 
 open(unit=10,file='hamiltonian_matrix.dat',status='old')
 
@@ -26,9 +25,9 @@ end do
 
 close(10)
 
-! -----------------------------
+
 ! Initialize eigenvector matrix
-! -----------------------------
+
 
 V = 0.0d0
 
@@ -36,9 +35,8 @@ do i=1,n
     V(i,i) = 1.0d0
 end do
 
-! -----------------------------
 ! Initialize diagonal arrays
-! -----------------------------
+
 
 do i=1,n
     b(i) = A(i,i)
@@ -46,9 +44,8 @@ do i=1,n
     z(i) = 0.0d0
 end do
 
-! -----------------------------
 ! Jacobi iteration
-! -----------------------------
+
 
 do iter = 1, max_iter
 
@@ -137,9 +134,9 @@ do iter = 1, max_iter
 
 end do
 
-! -----------------------------
+
 ! Print Results
-! -----------------------------
+
 
 print *, "Eigenvalues:"
 do i = 1, n
@@ -154,5 +151,6 @@ do i = 1, n
 end do
 
 end program jacobi_eigen  
+
 
 
