@@ -1,4 +1,4 @@
-! 1D Qyantum harmonic oscillator
+! 1D Quantum harmonic oscillator
 program harmonic_oscillator_quantum
     
     implicit real*8(a-h,o-z)
@@ -167,4 +167,5 @@ subroutine wavefunction(E)
     close(1)
     return
     end subroutine wavefunction    
+
 
