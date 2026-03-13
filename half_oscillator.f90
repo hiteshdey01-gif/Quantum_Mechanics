@@ -1,5 +1,5 @@
-! 1D Quantum harmonic oscillator
-program harmonic_oscillator_quantum
+! 1D Quantum half harmonic oscillator
+program half_harmonic_oscillator_quantum
     
     implicit real*8(a-h,o-z)
     character ch
@@ -35,7 +35,7 @@ program harmonic_oscillator_quantum
 write(*,*)Anorm(E3)
 
 call wavefunction(E3)
-end program harmonic_oscillator_quantum
+end program half_harmonic_oscillator_quantum
 
 
 
